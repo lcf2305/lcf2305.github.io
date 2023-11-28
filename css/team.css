@@ -12,6 +12,15 @@ aside {
     text-shadow: 3px 3px 10px #a5a5db;
 }
 
+.blendTitle {
+    font-size: 1.35em;
+	color: #245831;
+	font-weight: bold;
+	text-shadow: 5px 5px 8px #d67575;
+	text-align: center;
+
+}
+
 .figure_ph figure {
     position: relative;
     max-width: 275px;
@@ -23,7 +32,7 @@ figcaption {
     position: absolute;
     bottom: 0;
     background: F8F0E5;
-    color: #000000;
+    color: #f0e9e9;
     width: 100%;
     padding: 5% 0;
     text-align: center;

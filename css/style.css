@@ -28,7 +28,7 @@ img, video {
   
   .welMsg {
     padding-left: 70px;
-    text-align: justify;
+    text-align: center;
   }
   
   .prodImg {
@@ -161,8 +161,9 @@ main {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 350px;
+    padding-left: 550px;
     padding-top: 30px;
+	font-size: 20px;
   }
 
 /* rounded border */
