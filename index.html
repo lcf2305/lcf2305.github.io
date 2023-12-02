@@ -18,9 +18,27 @@
             <img src="Images/logo.png" alt="Logo Of Blend Beyond"></a>
         </header>
 
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-			<ul>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -29,8 +47,9 @@
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-			</ul>
+            </ul>
         </nav>
+
 
         <main>
             <div style="background-image: url('Images/welcomeImage.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 400px; width: 100%; color: whitesmoke;">
@@ -55,6 +74,9 @@
             </p>
         </footer>
     </div>
+
+    <script src="scripts/script.js"></script>
+
     
 </body>
 </html>

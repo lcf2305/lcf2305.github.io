@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blend Beyond</title>
     <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/media.css" class="css">
 </head>
 <body>
-
     <div id="container">
 
         <!-- Use the header area for the website name or logo -->
@@ -33,7 +33,22 @@
         </nav>
 
         <main>
+            <div id="music-sample">
+                <!-- <h3>We play upbeat music to help keep you 
+                    focused during your workout. Below is a sample of the type of music played during 
+                    a class workout.</h3> -->
+                    <audio controls>
+                        <source src="media/audio.mp3" type="audio/mp3">
+                        <!-- <p>Your browser does not support the audio element.</p>  -->
+                    </audio>
+            </div>
 
+            <div id="video-sample">
+                <video controls poster="images/hero-image.jpg">
+                    <source src="media/video.mp4" type="video/mp4">
+                    <!-- <p>Your browser does not support the video element.</p> -->
+                </video>
+            </div>
         </main>
 
 

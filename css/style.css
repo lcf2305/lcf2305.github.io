@@ -20,6 +20,36 @@ img, video {
 	display: block;
 }
 
+
+/* style rules for hamburger menu */
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+ /* Show mobile class, hide tablet-desktop class and menu-links id */
+ .mobile{
+	display: block;
+ }
+
+ .tablet-desktop, #menu-links {
+	display: none;
+ }
+
+
 /*Style rules for index */
 
 .welImg {
@@ -180,6 +210,18 @@ hr.rounded {
 header {
 	padding-bottom: 2%;
 }
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile, .mobile-nav {
+		display: none;
+	}
 
 /* Tablet Viewport: Style rules for nav area */
 nav li {
