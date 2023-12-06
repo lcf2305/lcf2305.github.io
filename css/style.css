@@ -12,10 +12,10 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 
 /* Style rules for body and images */
 body {
-	background-color: #F8F0E5;
+	background-color: #040504;
 }
 
-img, video {
+img {
 	max-width: 100%;
 	display: block;
 }
@@ -105,7 +105,7 @@ img, video {
 /* style rules for header */
 header {
 	top: 0;
-	background-color: #F8F0E5;
+	background-color: #040504;
 	height: 190px;
 }
 
@@ -117,15 +117,20 @@ header img{
 
 
 /* style rules for footer content */
+footer {
+	font-family: 'Francois One', sans-serif;
+}
+
 footer p {
 	font-size: 0.75em;
 	text-align: center;
-	color: #1a0101;
+	margin-top: 1%;
 	padding: 0 1em;
+	color: #C97064;
 }
 
 footer p a {
-	color: #1a0101;
+	color: #C97064;
 	text-decoration: none;
 }
 
@@ -142,9 +147,9 @@ nav ul {
 }
 
 nav li {
-	font-size: 1.75em;
+	font-size: 22px;
 	font-family: 'Francois One', sans-serif;
-	border-top: 1px solid #350202;	
+	border-top: 1px solid #C97064;	
 }
 
 nav li:first-child{
@@ -154,7 +159,7 @@ nav li:first-child{
 
 nav li a {
 		display: block;
-		color: #1a0101;
+		color: #C97064;
 		padding: 0.5em 1em;
 		text-decoration: none;
  }
@@ -163,8 +168,8 @@ nav li a {
 
 /* style rules for main content */
 main {
-	background-color: #fff;
-	padding: 2%;
+	background-color: #d4cfcf;
+	padding: 0%;
 	font-size: 1.15em;
 	font-family: 'Roboto Slab', serif;
 }
@@ -244,6 +249,7 @@ main ul {
 }
 
 }
+}
 
 
 /* Media query for Desktop viewport */
@@ -306,3 +312,58 @@ main ul {
 		color: #000;
 	}
 }
+
+
+/* Style rules for media */
+/* audio, video {
+	width: 100%;
+	max-width: 600px;
+	margin: 0;
+}
+
+#samples {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.music-sample, .video-sample {
+    margin: 0;
+}
+
+.video-sample h2 {
+	text-align: center;
+} */
+
+.audio-section,
+.video-section {
+    margin: 0;
+}
+
+audio,
+video {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    /* margin: 0; */
+}
+
+/* Style for Map */
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+}
+
+
+

@@ -13,6 +13,7 @@ File Name: style.css
 	display: none;
  }
 
+
 .tel-link{
 	background-color: #404040;
 	padding: 2%;
@@ -34,11 +35,12 @@ File Name: style.css
 }
 
 .action {
-	font-size: 1.35em;
-	color: #245831;
+	color: #076921;
 	font-weight: bold;
 	text-shadow: 5px 5px 8px #d67575;
 	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
 }
 
 

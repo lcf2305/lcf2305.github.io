@@ -8,17 +8,32 @@ aside {
     text-align: center;
     font-size: 2.5em;
     font-weight: bold;
-    color: #0000ff;
+    color: #076921;
     text-shadow: 3px 3px 10px #a5a5db;
 }
 
-.blendTitle {
-    font-size: 1.35em;
-	color: #245831;
-	font-weight: bold;
-	text-shadow: 5px 5px 8px #d67575;
-	text-align: center;
+article p {
+    text-align: justify;
+    padding: 2%;
+}
 
+
+.action {
+	color: #076921;
+	font-weight: bold;
+    text-shadow: 3px 3px 10px #a5a5db;
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+
+.blendTitle {
+    font-size: 2em;
+	color: #076921;
+	font-weight: bold;
+    text-shadow: 3px 3px 10px #a5a5db;
+    text-align: center;
+    padding-top: 1%;
 }
 
 .figure_ph figure {
