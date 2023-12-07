@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blend Beyond</title>
-    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/styles.css" class="css">
     <link rel="stylesheet" href="css/faq.css" class="css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
@@ -20,9 +20,27 @@
             <img src="Images/logo.png" alt="Logo Of Blend Beyond"></a>
         </header>
 
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-			<ul>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -31,93 +49,55 @@
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-			</ul>
+            </ul>
         </nav>
 
         <main>
-            <!-- <div class="container">
-                <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <h1 class="action">Frequently Asked Questions</h1>
+            
                 <div class="faq">
-                    <details>
-                        <summary>Question 1: What are the blender's specifications?</summary>
-                        <p>Answer 1: Our blender has a 1000W motor and comes with stainless steel blades.</p>
-                    </details>
-        
-                    <details>
-                        <summary>Question 2: Is the blender dishwasher-safe?</summary>
-                        <p>Answer 2: Yes, all removable parts of our blender are dishwasher-safe.</p>
-                    </details>
-        
-                    <details>
-                        <summary>Question 3: How to clean the blender?</summary>
-                        <p>Answer 3: You can clean the blender by using warm soapy water and a sponge.</p>
-                    </details>
-        
-                    <details>
-                        <summary>Question 4: What is the warranty period?</summary>
-                        <p>Answer 4: Our blender comes with a 2-year warranty from the date of purchase.</p>
-                    </details>
-        
-                    <details>
-                        <summary>Question 5: Can I blend hot liquids in the blender?</summary>
-                        <p>Answer 5: No, it's recommended not to blend hot liquids in the blender.</p>
-                    </details>
+                  <h3>Q: What type of ingredients can I blend in this blender?</h3>
+                  <p>A: Our blender is designed to handle a wide variety of ingredients, including fruits, vegetables, ice, nuts, seeds, and more. It's versatile enough to create smoothies, soups, sauces, dips, and even grind coffee beans or crush ice.</p>
                 </div>
-            </div> -->
-
-            <div class="container">
-                <h1>Frequently Asked Questions</h1>
+            
+                <div class="faq">
+                    <h3>Q: How do I clean the blender after use?</h3>
+                    <p>A: Cleaning our blender is simple! Just disassemble the parts, wash the jar, lid, and blades with warm soapy water, and then rinse thoroughly. The blender jar is also dishwasher-safe for added convenience.</p>
+                </div>
                 
                 <div class="faq">
-                    <div class="faq-item">
-                        <div class="question">
-                            <h3>Question 1: What are the blender's specifications?</h3>
-                        </div>
-                        <div class="answer">
-                            <p>Answer 1: Our blender has a 1000W motor and comes with stainless steel blades.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq-item">
-                        <div class="question">
-                            <h3>Question 2: Is the blender dishwasher-safe?</h3>
-                        </div>
-                        <div class="answer">
-                            <p>Answer 2: Yes, all removable parts of our blender are dishwasher-safe.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq-item">
-                        <div class="question">
-                            <h3>Question 3: What is the warranty period for the blender?</h3>
-                        </div>
-                        <div class="answer">
-                            <p>Answer 3: Our blender comes with a one-year limited warranty.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq-item">
-                        <div class="question">
-                            <h3>Question 4: Can I blend hot liquids in the blender?</h3>
-                        </div>
-                        <div class="answer">
-                            <p>Answer 4: It's not recommended to blend hot liquids in our blender due to safety reasons.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq-item">
-                        <div class="question">
-                            <h3>Question 5: How can I clean the blender?</h3>
-                        </div>
-                        <div class="answer">
-                            <p>Answer 5: The blender can be cleaned by rinsing the jar and blades with warm, soapy water.</p>
-                        </div>
-                    </div>
+                    <h3>Q: Is the blender suitable for making nut butter or milling grains?</h3>
+                    <p>Absolutely! Our blender is powerful enough to create nut butter from various nuts and can mill grains into flour. The high-performance blades and motor allow for these versatile uses.</p>
                 </div>
-            </div>
-        
-        </main>
 
+                <div class="faq">
+                    <h3>Q: What safety features does the blender have?</h3>
+                    <p>A: Safety is a priority. Our blender includes features such as overheat protection, automatic shut-off in case of overheating, and a secure locking mechanism to prevent the blender from operating unless properly assembled.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: Can I blend hot liquids in this blender?</h3>
+                    <p>A: Yes, our blender can handle blending hot liquids. However, it's essential to use caution and not fill the jar to the maximum capacity to prevent pressure build-up due to heat.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: How long is the warranty for this blender?</h3>
+                    <p>A: Our blender comes with a 2 Years warranty. Please refer to the product manual or contact our customer service for more details on warranty coverage and terms.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: What is the power consumption of the blender?</h3>
+                    <p>A: Our blender consumes 500 watts during operation, ensuring efficient performance while blending various ingredients.</p>
+                </div>
+
+                <div class="faq">
+                    <h3>Q: Can I purchase replacement parts for the blender?</h3>
+                    <p>A: Yes, we offer replacement parts for our blender. You can easily find and purchase them through our website or by contacting our customer support team.</p>
+                </div>
+                
+            </div>
+        </main>
 
         <!-- Use the footer area to add webpage footer content -->
         <footer>
@@ -129,6 +109,7 @@
             </p>
         </footer>
     </div>
-    
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 /*
 Author: Romika Chaudhary
-File Name: style.css
+File Name: styles.css
 */
 
 /* CSS Reset */
@@ -63,14 +63,14 @@ img {
   
   .prodImg {
     font-size: larger;
-    padding-left: 70px;
-    text-align: justify;
+    padding-left: 60px;
+	margin-left: -45%;
   }
   
   .prodMsg {
     padding-left: 0 auto;
     padding-top: 0px;
-    text-align: center;
+    text-align: justify;
   }
 
   
@@ -82,9 +82,15 @@ img {
     text-align: justify;
     }
   
-  #fchop, #pblend, #cblend, p {
+  #fchop, #pblend, #cblend {
     letter-spacing: -1px;
   }
+
+  p {
+	letter-spacing: -1px;
+
+  } 
+  
   
   hr.dotted {
       border-top: 3px dotted #bbb;
@@ -101,7 +107,6 @@ img {
 }
 
 /* Style rules for mobile viewport */
-
 /* style rules for header */
 header {
 	top: 0;
@@ -112,9 +117,6 @@ header {
 header img{
 	margin: 0 auto;
 }
-
-
-
 
 /* style rules for footer content */
 footer {
@@ -179,17 +181,6 @@ main {
 	text-align: center;
 }
 
-/* style rule for special in weekly and product of the week */
-#clean, #oralb, #pclean {
-    width: 29%;
-    float: left;
-    margin: 0 2%;
-}
-
-#info {
-    clear: left;
-    padding: 1% 2%;
-}
 
 /*Style rules for page*/
 .welcome, .product {
@@ -314,28 +305,16 @@ main ul {
 	}
 }
 
-
 /* Style rules for media */
-/* audio, video {
-	width: 100%;
-	max-width: 600px;
-	margin: 0;
-}
-
-#samples {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.music-sample, .video-sample {
-    margin: 0;
-}
-
-.video-sample h2 {
-	text-align: center;
-} */
+.action {
+    color: #076921;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px #a5a5db;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+  
+  }
+  
 
 .audio-section,
 .video-section {
@@ -382,13 +361,12 @@ button[type="explore"] {
 	font-size: 20px;
 	margin: 4px 2px;
 	cursor: pointer;
+	border-radius: 15px 25px 15px 25px;
  }
 
 .button-container {
     text-align: center;
 	margin-right: 10%;
 } 
-
-
 
 

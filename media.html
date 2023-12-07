@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blend Beyond</title>
-    <link rel="stylesheet" href="css/style.css" class="css">
-    <link rel="stylesheet" href="css/media.css" class="css"> 
+    <link rel="stylesheet" href="css/styles.css" class="css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,9 +18,27 @@
             <img src="Images/logo.png" alt="Logo Of Blend Beyond"></a>
         </header>
 
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-			<ul>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -30,13 +47,14 @@
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-			</ul>
+            </ul>
         </nav>
 
-        <main>
+
+        <main style="padding: 1%;">
             <div id="center">
                 <section class="audio-section">
-                    <h2>Instruction to clean blender!</h2>
+                    <h2 class="action">Instruction to clean blender!</h2>
                         <audio controls>
                             <source src="media/audio.mp3" type="audio/mp3">
                             <p>Your browser does not support the audio element.</p> 
@@ -44,7 +62,7 @@
                 </section>
     
                 <section class="video-section">
-                    <h3 style="text-align: center;">How to use our blender?</h3>
+                    <h3 class="action">Showcasing our latest blender.</h3>
                     <video controls>
                         <source src="media/video.mp4" type="video/mp4">
                         <p>Your browser does not support the video element.</p>
@@ -63,6 +81,7 @@
             </p>
         </footer>
     </div>
-    
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>

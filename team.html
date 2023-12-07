@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blend Beyond</title>
-    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/styles.css" class="css">
     <link rel="stylesheet" href="css/team.css" class="css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
@@ -20,9 +20,27 @@
             <img src="Images/logo.png" alt="Logo for Blend Beyond"></a>
         </header>
 
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-			<ul>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -31,8 +49,9 @@
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-			</ul>
+            </ul>
         </nav>
+
 
             <main style="padding: 1%;" class="grid">
                 <article  style="padding: 20%; padding-top: 0; padding-bottom: 0;">
@@ -45,41 +64,41 @@
                         products and ensures that the company's offerings cater to a wide spectrum of consumer needs.</p>
                 </article>
                 <aside>
-                    <p>Blend Beyond dedicated and talented crews.</p>
+                    <p>Blend Beyond's dedicated and talented crews.</p>
                 </aside>
         
                 <div class="figure_ph">
                     <figure>
-                        <img src="Images/Image1.jpg" alt="CEO">
+                        <img src="Images/Image1.jpg" alt="Chief Executive Officer of Blend Beyond">
                         <figcaption>Emily Patterson - Chairperson</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image2.jpg" alt="Leadership Team">
+                        <img src="Images/Image2.jpg" alt="Leadership Team of Blend Beyond">
                         <figcaption>Jacob Thompson - CEO
                         </figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image3.jpg" alt="Financial Analyst">
+                        <img src="Images/Image3.jpg" alt="Financial Analyst of Blend Beyond">
                         <figcaption> Samantha Rodriguez, Financial Analyst</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image4.jpg" alt="Customer Support Supervisor">
+                        <img src="Images/Image4.jpg" alt="Customer Support Supervisor of Blend Beyond">
                         <figcaption>Oliver Greene, Customer Support Supervisor</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image5.jpg" alt="Executives">
+                        <img src="Images/Image5.jpg" alt="Executives of Blend Beyond">
                         <figcaption>Mia Campbell, Executives</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image6.jpg" alt="Creative Design Lead">
+                        <img src="Images/Image6.jpg" alt="Creative Design Lead of Blend Beyond">
                         <figcaption>Ethan Foster, Creative Design Lead</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image7.jpg" alt="Marketing">
+                        <img src="Images/Image7.jpg" alt="Marketing of Blend Beyond">
                         <figcaption>Ava Carter, Marketing</figcaption>
                     </figure>
                     <figure>
-                        <img src="Images/Image8.jpg" alt="Sales Representatives">
+                        <img src="Images/Image8.jpg" alt="Sales Representatives of Blend Beyond">
                         <figcaption>Noah Brooks, Sales Representatives</figcaption>
                     </figure>
                 </div>
@@ -95,5 +114,7 @@
             </p>
         </footer>
     </div>
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>

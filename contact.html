@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blend Beyond</title>
-    <link rel="stylesheet" href="css/style.css" class="css">
+    <link rel="stylesheet" href="css/styles.css" class="css">
     <link rel="stylesheet" href="css/contact.css" class="css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
@@ -20,9 +20,27 @@
             <img src="Images/logo.png" alt="Logo Of Blend Beyond"></a>
         </header>
 
-        <!-- Use the nav area to add hyperlinks to other pages within the website -->
-        <nav>
-			<ul>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+			<div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
@@ -31,15 +49,17 @@
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-			</ul>
+            </ul>
         </nav>
+
 
         <main>
             <div id="contact">
                 <h2>Ready to get started? Contact us today.</h2>
                 <h4>Email us: <a href="mailto:info@blendbeyond.com" class="contact-email-link">info@blendbeyond.com</a></h4>
-                <h4>Visit us at: 1220 Lambton Mall, London Road</h4>
+                <h4>Visit us at: 1206 Lambton Mall, London Road</h4>
             </div>
+            
             <div class="container">
                 <h1>Contact Us</h1>
                 <form action="#" method="post">
@@ -109,6 +129,7 @@
             </p>
         </footer>
     </div>
-    
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>
