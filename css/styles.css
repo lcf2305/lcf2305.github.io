@@ -64,7 +64,7 @@ img {
   .prodImg {
     font-size: larger;
     padding-left: 60px;
-	margin-left: -45%;
+	margin-left: -80%;
   }
   
   .prodMsg {
@@ -274,7 +274,7 @@ main ul {
 	
 	nav li a:hover {
 		color: #a77171;
-		background-color: #5c0404;
+		background-color: whitesmoke;
 		border-radius: 15px 25px 15px 25px;
 	}
 	
